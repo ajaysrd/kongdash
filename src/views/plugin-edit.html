@@ -8,7 +8,7 @@
             <label class="field-label">Plugin Name</label>
             <div class="field-input">
             <select data-ng-disabled="{{pluginId!=null}}" class="stretch" name="name" data-ng-model="formInput.name">
-                <option data-ng-repeat="plugin in enabledPlugins" value="{{plugin}}">{{plugin}}</option>
+                <option data-ng-repeat="(key, value) in enabledPlugins" value="{{key}}">{{key}}</option>
             </select>
             </div>
         </div>
